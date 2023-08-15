@@ -1,6 +1,15 @@
 package com.picpaysimplificado.dtos;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
 import java.math.BigDecimal;
 
-public record TransactionDTO(BigDecimal value, Long senderId, Long receiverId) {
+@Data
+@AllArgsConstructor
+public class TransactionDTO{
+
+    private BigDecimal value;
+    private Long senderId;
+    private Long receiverId;
 }

@@ -1,4 +1,11 @@
 package com.picpaysimplificado.dtos;
 
-public record ExceptionDTO (String message, String statusCode) {
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+public class ExceptionDTO {
+    private String message;
+    private String statusCode;
 }

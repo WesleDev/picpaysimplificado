@@ -25,6 +25,6 @@ public class NotificationService {
 //            throw new Exception("Serviço de notificação indisponivel");
 //        }
 
-        System.out.println("Notificacao enviada para o usuario");
+        System.out.println("Notificacao enviada para o usuario: "+message);
     }
 }
